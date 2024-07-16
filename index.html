@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="CameraCorner, Sale, Blog, Feedback, Camera">
+    <meta name="description" content="Homepage for the Camera Corner Store">
+    <meta name="author" content="Icchit Maharjan">
+    <link rel="stylesheet" href="css/horizontal-slider.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/BlogPost.css">
+    <script src="javascript/AddToCart.js"></script>
+    <script src="javascript/date.js"></script>
+    <title>home</title>
+    <style>
+      * {
+      margin: 0px;
+      padding: 0px;
+    }
+    body{
+      background:#fff;
+      position: relative;}
+
+    ul li{
+      display: inline-block;
+      position: relative;
+     }
+    .slider{
+      width: 90%;
+      height: 500px;
+      margin: 20px 5%;
+      top:1000px;
+      box-sizing: border-box;
+      overflow: hidden;
+     }
+    img{
+      width: 100%;
+      height: 100%;
+     }
+    .bottomProfile{
+      height: fit-content;
+      padding: 20px;
+      text-align: center;
+     }
+    .bottomProfile > p {
+      font-size: 14px;
+      margin-top: 6px;
+     }
+    .bpImg{
+      width: 200px;
+      height: 150px;
+     }
+    h4{
+      font-size: 18px;
+      margin-top: 30px;
+      color: rgb(95, 94, 94);
+     }
+    .AboutUs{
+      text-decoration:none;
+      color: #628598; 
+      font-size:30px;
+     }
+    .AboutUs:hover{
+      color: black;
+      cursor: pointer;
+     }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+     <div class="menu">
+        <nav>
+          <a href="index.html">
+            <img src="images/Camera Corner.png" class="logo"> <!-- Logo for the camera corner store -->
+          </a>
+          <div class="search-container">
+            <form action="/search">
+             <input type="text" placeholder="Search...">    <!-- search button for the camera corner store -->
+             <button type="submit"><i class="search"></i></button>
+            </form>
+         </div>
+         <ul>
+            <li><a href="index.html" class="currentPage">
+              Home</a></li>
+            <li><a href="pages/products.html">
+              Products
+            </a></li>
+            <li><a href="pages/research.html">
+              Research
+            </a></li>
+            <li><a href="pages/blogpage.html">
+              Blog
+            </a></li>
+            <li><div class="dropDown">
+              <a href="pages/aboutUsPage.html" class="buttonDrop"> <!--Dropdown Menu for the camera corner store -->
+                 About Us 
+              </a>
+              <div class="dropdown-menu">
+                <!-- Content for the Drop down menu -->
+                <a href="pages/cvPage1.html">
+                  Sujita
+                </a>
+                <a href="pages/cvPage2.html">
+                  Icchit
+                </a>
+                <a href="pages/cvPage4.html">
+                  Aayush
+                </a>
+                <a href="pages/cvPage4.html" >
+                  Ajit
+                </a>
+              </div>
+            </li>
+          </ul>
+          </div>
+        </div>
+    </nav>
+    </header>
+    <div class="slider" >
+      <div id="img">
+        <img style=" object-fit:conatin;" src="images/BannerBlogPage.png">
+      </div>
+    </div>
+    <div class="horizontal-slider" style="margin: 50px 10%;">
+      <div class="box" id="feature-label"><p >20% Off All Featured Products!!!</p></div>
+      <div class="box">
+        <div class="imgbox ">
+         <span class="save-label">Save Rs.2000</span>
+         <a href="pages/productDetails.html" target="_blank">
+           <img src="images/nikonD850-Body.jpg" alt="" class="product-img">
+         </a>
+        </div>
+         <div class="product-details">
+           <p class="product-name">
+             NikonD850-Body
+           </p>
+           <p class="price">
+            <span class="discount">10000</span> Rs.100 
+           </p>
+           <button class="addToCart" onclick="ChangeButton(this)" ondblclick="ChangeButtonAgain(this)">
+             Add to Cart
+           </button>
+         </div>
+       </div>
+       <div class="box">
+         <div class="imgbox ">
+          <span class="save-label">Save Rs.2000</span>
+          <a href="pages/productDetails.html" target="_blank">
+           <img src="images/BlackmagicPocketCinema.png" alt="" class="product-img">
+          </a>
+         </div>
+         <div class="product-details">
+           <p class="product-name">
+            Blackmagic Pocket Cinema Camera 4K
+           </p>
+           <p class="price">
+            <span class="discount">10000</span>Rs.100000
+           </p>
+           <button class="addToCart" onclick="ChangeButton(this)" ondblclick="ChangeButtonAgain(this)">
+             Add to Cart
+           </button>
+         </div>
+       </div>
+       <div class="box">
+         <div class="imgbox ">
+          <span class="save-label">Save Rs.2000</span>
+          <a href="pages/productDetails.html" target="_blank"></a>
+           <img src="images/CanonE0S-R-Body.png" alt="" class="product-img">
+          </a>
+         </div>
+         <div class="product-details">
+           <p class="product-name">
+            Canon EOS R8 Body
+           </p>
+           <p class="price">
+            <span class="discount">10000</span>Rs.100000
+           </p>
+           <button class="addToCart" onclick="ChangeButton(this)" ondblclick="ChangeButtonAgain(this)">
+             Add to Cart
+           </button>
+         </div>
+       </div>
+       <div class="box">
+         <div class="imgbox">
+          <span class="save-label">Save Rs.2000</span>
+          <a href="pages/productDetails.html" target="_blank">
+           <img src="images/CanonEF50mm-f1.8-STM.png" alt="" class="product-img">
+          </a>
+         </div>
+         <div class="product-details">
+           <p class="product-name">
+            Canon EF 50mm f1.8 STM
+           </p>
+           <p class="price">
+            <span class="discount">10000</span>Rs.100000
+           </p>
+           <button class="addToCart" onclick="ChangeButton(this)" ondblclick="ChangeButtonAgain(this)">
+            Add to Cart
+          </button>
+         </div>
+       </div>
+      </div>
+    </div>
+    <div class="blogBox">
+      <h3 style="color: #628598; font-size:30px; margin-bottom: 20px;">Our Latest Blogs</h3>
+      <div class="blogs">
+        <div class="blogProfile">
+          <a href="pages/blogpage.html">
+          <img src="images/Begginers.jpg"  class=blogImg alt="">
+        </a>
+          <p class="blogTitle">
+            Begginer's Guide to Photography
+          </p>
+        </div>
+        <div class="blogProfile">
+          <a href="pages/blogpage.html">
+          <img src="images/HistoryOfCamera.jpg"  class=blogImg alt="">
+        </a>
+          <p class="blogTitle">
+            History of Film & Videography
+          </p>
+        </div>
+        <div class="blogProfile">
+          <a href="pages/blogpage.html">
+           <img src="images/NikonBlog.jpg"  class=blogImg alt="">
+          </a>
+          <p class="blogTitle">
+            Impact Of Technology
+          </p>
+        </div>
+        <div class="blogProfile">
+          <a href="pages/blogpage.html">
+          <img src="images/CanonBlog.jpg"  class=blogImg alt="">
+        </a>
+          <p class="blogTitle">
+            Review : Canon E0S R Body
+          </p>
+        </div>
+      </div>
+    </div>
+    <div style="height: fit-content; margin: 20px 10%; text-align: center; margin-bottom: 40px;">
+      <h3 style="margin-bottom: 10px;"> <a href="pages/aboutUsPage.html" class=AboutUs> About Us </a></h3>
+      <p style="color: rgb(95, 94, 94); font-size: 18px;">"Camera Corner" Company is the result of a technological revolution and growing e-commerce industry, that encouraged us to 
+        create “A One-Stop Digital Platform”, for all camera lovers. We sell cameras ensuring quality and with the promise of its performance. 
+        But above all, one thing we prioritize in selling is “ The best camera and filming accessories for you”.</p>
+    </div>
+    <div style="height: 100px; margin: 20px 20%; background-color: #cdcdcd; box-shadow: inset 1px 2px 5px rgba(0,0,0,0.15);">
+      <h3 style="display: inline-block; font-size: 30px; margin:40px 40px; ">Have Any Querries Or Suggestions?</h3>
+      <a href="pages/feedbackFormPage.html" >
+        <button class="addToCart" style=" font-size: 23px; padding: 10px 10px; margin-left: 100px;">
+          Contact Us
+        </button>
+       </a></div>
+
+       
+
+       <div style="display: flex; margin: 20px 20%; justify-content: space-between;">
+        <div class="bottomProfile">
+        <img src="images/orgProducts.png" class="bpImg" alt="">
+        <h4>100% GENUINE PRODUCTS</h4>
+        <p>Shop with peace of mind , The Camera Corner Store only sells genuine products. 100% original products are acquired from manufacturers through proper channels and proper quality checks.
+        </p>
+       </div>
+       <div class="bottomProfile">
+        <img src="images/abc.png" style="width:180px;" class="bpImg" alt="">
+        <h4>TIMELY & FREE* DELIVERY</h4>
+        <p>
+          Timely delivery has always been our priority. Order today by 9am and it is delivered the same evening in Kathmandu. Also get free delivery for order inside the Kathmandu valley.
+        </p>
+       </div>
+       <div class="bottomProfile">
+        <img src="images/delivery.png" class="bpImg" style="width:180px; " alt="">
+        <h4>FREE & EASY RETURNS</h4>
+        <p>
+          Easy returns for items shopped online. Most items can be returned for a refund or replacement within a 7-day return window. Please check our return policies.
+        </p>
+       </div>
+    </div>
+    <footer>
+    <div class="row">
+      <div class="col">
+        <h4>About Camera Corner</h4>
+        <p>"Camera Corner" Company is the result of a technological revolution and growing e-commerce industry, that encouraged us to 
+          create “A One-Stop Digital Platform”, for all camera lovers. We sell cameras ensuring quality and with the promise of its performance. 
+          But above all, one thing we prioritize in selling is “ The best camera and filming accessories for you”.</p>
+      </div>
+      <div class="col">
+        <h4>More</h4>
+        <ul class="footerlist">
+          <li><a href="index.html">Home</a></li><br>
+          <li><a href="pages/aboutUsPage.html">About Us</a></li><br>
+          <li><a href="pages/blogpage.html">Blog Page</a></li><br>
+          <li><a href="pages/feedbackFormPage.html">Customer Support</a></li><br>
+          <li><a href="mailto:np01nt4s230025@islingtoncollege.edu.np" target="_blank">Mail Us </a></li><br>
+        </ul>
+      </div>
+      </div>
+      <p class="footerParagraph"id="date"></p>
+      <p class="footerParagraph""> Copyright &reg; CameraCorner Store</p>
+   </footer>
+   <script>
+    display_date();
+   
+    var images = ['images/SaleBanner.png', 'images/BuyNowBanner.png', 'images/QuotesBanner.png'];
+
+    var x = 0;
+    var imgs = document.getElementById('img');
+    //The setInterval() calls a function at theintervals (in milliseconds). 
+    setInterval(slider, 3000);
+
+    function slider() {
+
+      if (x < images.length) 
+        {
+        x = x + 1;
+        } 
+
+      else 
+        {
+        x = 1;
+        }
+
+
+      imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+    }
+
+    
+
+   </script>
+ 
+ </body>
+ </html>
+ 
+</body>
+</html>

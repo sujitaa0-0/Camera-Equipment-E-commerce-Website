@@ -1,0 +1,22 @@
+.addToCart{
+  background-color: rgb(227, 76, 39);
+  color: white;
+  border: none;
+  font-size: 15px;
+  border-radius: 12px;
+  padding: 5px 15px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+.addToCart:hover{
+  opacity: 95%;
+  padding: 6px 16px;
+  margin-bottom:24px ;
+  margin-top: 4px;
+  transition: all 0.1s;
+}
+.addToCart:active{
+  opacity: 80%;
+  transition: all 0.15s;
+}

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="CameraCorner, Sale, Lens, Tripod,  Camera">
+  <meta name="description" content="Product Page the Camera Corner Store">
+  <meta name="author" content="Sujita Pandey">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/horizontal-slider.css">
+  <script src="../javascript/AddToCart.js"></script>
+  <script src="../javascript/date.js"></script>
+  <title>Products Page</title>
+</head>
+<style>
+ 
+  
+  .first-container{
+    margin: 20px 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 380px;
+    justify-content:space-between ;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+  }
+  .product-profile{
+   width: 300px;
+   border: 2px solid #cdcdcd;
+   margin-top: 25px;
+   margin-bottom: 25px;
+
+  }
+  .product-profile:hover{
+    box-shadow: inset 1px 2px 5px rgba(0,0,0,0.15);
+    transform: translate(0px, -4px);
+    transition: all 0.15s;
+  }
+  .product-img{
+    width: 80%;
+    margin:8px 30px;
+    vertical-align: center;
+  }
+  
+  .product-details{
+    text-align: center;
+  }
+  .product-name{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 2px 25px;
+  }
+  
+  .addToCart{
+    background-color: rgb(227, 76, 39);
+    color: white;
+    border: none;
+    font-size: 15px;
+    border-radius: 12px;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    margin-top: 5px;
+  }
+  .addToCart:hover{
+    opacity: 95%;
+    padding: 6px 16px;
+    margin-bottom:24px ;
+    margin-top: 4px;
+    transition: all 0.1s;
+  }
+  .addToCart:active{
+    opacity: 80%;
+    transition: all 0.15s;
+  }
+  .save-label{
+  color: white;
+  background-color: #88bbd6;
+  padding: 4px 8px;
+  left: -2px;
+  top: -1px;
+  position: absolute; /*so that span appears on top of image*/
+  box-shadow:  1px 2px 5px rgba(0,0,0,0.15);
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+  
+
+</style>
+<header>
+  <div class="menu">
+     <nav>
+       <a href="../index.html">
+        <img src="../images/Camera Corner.png" class="logo">
+       </a>
+       <div class="search-container">
+         <form action="/search">
+          <input type="text" placeholder="Search...">
+          <button type="submit"><i class="search"></i></button>
+         </form>
+      </div>
+      <ul>
+         <li><a href="../index.html" >
+           Home</a></li>
+         <li><a href="products.html" class="currentPage">
+           Products
+         </a></li>
+         <li><a href="research.html" >
+           Research
+         </a></li>
+         <li><a href="blogpage.html">
+           Blog
+         </a></li>
+         <li><div class="dropDown">
+           <a href="aboutUsPage.html" class="buttonDrop">
+              About Us 
+           </a>
+           <div class="dropdown-menu">
+             <a href="cvPage1.html">
+               Sujita
+             </a>
+             <a href="cvPage2.html">
+               Icchit
+             </a>
+             <a href="cvPage4.html">
+               Aayush
+             </a>
+             <a href="cvPage3.html" >
+              Ajit
+            </a>
+           </div>
+         </li>
+       </ul>
+       </div>
+     </div>
+ </nav>
+ </header>
+<body>
+  <div class="horizontal-slider">
+    <div class="box" id="feature-label"><p >20% Off All Featured Products!!!</p></div>
+   <div class="box">
+     <div class="imgbox ">
+      <span class="save-label">Save Rs.2000</span>
+      <a href="productDetails.html" target="_blank">
+       <img src="../images/nikonD850-Body.jpg" alt="" class="product-img">
+      </a>
+     </div>
+     <div class="product-details">
+       <p class="product-name">
+         NikonD850-Body
+       </p>
+       <p class="price">
+        <span class="discount">10000</span> Rs.100 
+       </p>
+       <button class="addToCart" onclick="ChangeButton(this)" ondblclick="ChangeButtonAgain(this)">
+         Add to Cart
+       </button>
+     </div>
+   </div>
+   <div class="box">
+     <div class="imgbox ">
+      <span class="save-label">Save Rs.2000</span>
+      <a href="productDetails.html" target="_blank">
+       <img src="../images/BlackmagicPocketCinema.png" alt="" class="product-img">
+      </a>
+     </div>
+     <div class="product-details">
+       <p class="product-name">
+        Blackmagic Pocket Cinema Camera 4K
+       </p>
+       <p class="price">
+        <span class="discount">10000</span>Rs.100000
+       </p>
+       <button class="addToCart" onclick="ChangeButton(this)" ondblclick="ChangeButtonAgain(this)">
+         Add to Cart
+       </button>
+     </div>
+   </div>
+   <div class="box">
+     <div class="imgbox ">
+      <span class="save-label">Save Rs.2000</span>
+      <a href="productDetails.html" target="_blank"></a>
+       <img src="../images/CanonE0S-R-Body.png" alt="" class="product-img">
+      </a>
+     </div>
+     <div class="product-details">
+       <p class="product-name">
+        Canon EOS R8 Body
+       </p>
+       <p class="price">
+        <span class="discount">10000</span>Rs.100000
+       </p>
+       <button class="addToCart" onclick="ChangeButton(this)" ondblclick="ChangeButtonAgain(this)">
+         Add to Cart
+       </button>
+     </div>
+   </div>
+   <div class="box">
+     <div class="imgbox">
+      <span class="save-label">Save Rs.2000</span>
+      <a href="productDetails.html" target="_blank">
+       <img src="../images/CanonEF50mm-f1.8-STM.png" alt="" class="product-img">
+      </a>
+     </div>
+     <div class="product-details">
+       <p class="product-name">
+        Canon EF 50mm f1.8 STM
+       </p>
+       <p class="price">
+        <span class="discount">10000</span>Rs.100000
+       </p>
+       <button class="addToCart" onclick="ChangeButton(this)" ondblclick="ChangeButtonAgain(this)">
+        Add to Cart
+      </button>
+     </div>
+   </div>
+  </div>
+</div>
+<div>
+  <div class="first-container">
+    <div class="product-profile">
+      <a href="productDetails.html" target="_blank">
+       <img src="../images/CanonEOS-5D-Mark-IV.png" alt="" class="product-img">
+      </a>
+      <div class="product-details">
+        <p class="product-name">
+          Canon EOS 5D Mark IV Body
+        </p>
+        <p class="price">
+          Rs.100000
+        </p>
+        <button class="addToCart" onclick="ChangeButton(this)" ondblclick="ChangeButtonAgain(this)">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <div class="product-profile">
+      <a href="productDetails.html" target="_blank">
+       <img src="../images/CanonMountAdaptorEF-EOS-R.png" alt="" class="product-img">
+      </a>
+      <div class="product-details">
+        <p class="product-name">
+          Canon Mount Adapter EF-EOS R
+        </p>
+        <p class="price">
+          Rs.100000
+        </p>
+        <button class="addToCart" onclick="ChangeButton(this)" ondblclick="ChangeButtonAgain(this)">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <div class="product-profile">
+      <a href="productDetails.html" target="_blank">
+       <img src="../images/CanonSpeedlite430X.png" alt="" class="product-img">
+      </a>
+      <div class="product-details">
+        <p class="product-name">
+          Canon Speedlite 430EX III-RT
+        </p>
+        <p class="price">
+         Rs.100000
+        </p>
+        <button class="addToCart" onclick="ChangeButton(this)" ondblclick="ChangeButtonAgain(this)">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <div class="product-profile">
+      <a href="productDetails.html" target="_blank">
+       <img src="../images/FUJIFILMX100V.png" alt="" class="product-img">
+      </a>
+      <div class="product-details">
+        <p class="product-name">
+          FUJIFILM X100V
+        </p>
+        <p class="price">
+         Rs.100000
+        </p>
+        <button class="addToCart" onclick="ChangeButton(this)" ondblclick="ChangeButtonAgain(this)">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <div class="product-profile">
+      <a href="productDetails.html" target="_blank">
+       <img src="../images/NikkorAF-S50mm-f1.png" alt="" class="product-img">
+      </a>
+      <div class="product-details">
+        <p class="product-name">
+          Nikkor AF-S 50mm f1.4G
+        </p>
+        <p class="price">
+         Rs.100000
+        </p>
+        <button class="addToCart" onclick="ChangeButton(this)" ondblclick="ChangeButtonAgain(this)">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <div class="product-profile">
+      <a href="productDetails.html" target="_blank">
+       <img src="../images/PanasonicHC-V180.png" alt="" class="product-img">
+      </a>
+      <div class="product-details">
+        <p class="product-name">
+          Panasonic HC-V180 HD Camcorder
+        </p>
+        <p class="price">
+         Rs.100000
+        </p>
+        <button class="addToCart" onclick="ChangeButton(this)" ondblclick="ChangeButtonAgain(this)">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <div class="product-profile">
+      <a href="productDetails.html" target="_blank">
+       <img src="../images/Polaroid-Now-Plus.png" alt="" class="product-img">
+      </a>
+      <div class="product-details">
+        <p class="product-name">
+          Polaroid Now+ i-Type Instant Camera
+        </p>
+        <p class="price">
+         Rs.100000
+        </p>
+        <button class="addToCart" onclick="ChangeButton(this)" ondblclick="ChangeButtonAgain(this)">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <div class="product-profile">
+      <a href="productDetails.html" target="_blank">
+       <img src="../images/SmallRig-FreeBlazer-Tripod-Kit.png" alt="" class="product-img">
+      </a>
+      <div class="product-details">
+        <p class="product-name">
+          SmallRig FreeBlazer Heavy-Duty Carbon Fibre Video Tripod Kit
+        </p>
+        <p class="price">
+         Rs.100000
+        </p>
+        <button class="addToCart" onclick="ChangeButton(this)" ondblclick="ChangeButtonAgain(this)">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <div class="product-profile">
+      <a href="productDetails.html" target="_blank">
+       <img src="../images/Sony35mm.png" alt="" class="product-img">
+      </a>
+      <div class="product-details">
+        <p class="product-name">
+          Sony FE 35mm f1.8
+        </p>
+        <p class="price">
+         Rs.100000
+        </p>
+        <button class="addToCart" onclick="ChangeButton(this)" ondblclick="ChangeButtonAgain(this)">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <div class="product-profile">
+      <a href="productDetails.html" target="_blank">
+       <img src="../images/SonyNP-FZ100BatteryPack.png" alt="" class="product-img">
+      </a>
+      <div class="product-details">
+        <p class="product-name">
+          Sony NP-FZ100 Battery Pack
+        </p>
+        <p class="price">
+         Rs.100000
+        </p>
+        <button class="addToCart" onclick="ChangeButton(this)" ondblclick="ChangeButtonAgain(this)">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <div class="product-profile">
+      <a href="productDetails.html" target="_blank">
+       <img src="../images/SonyZV-1.png" alt="" class="product-img">
+      </a>
+      <div class="product-details">
+        <p class="product-name">
+          Sony ZV-1
+        </p>
+        <p class="price">
+         Rs.100000
+        </p>
+        <button class="addToCart" onclick="ChangeButton(this)" ondblclick="ChangeButtonAgain(this)">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <div class="product-profile" style="visibility: hidden;"></div>
+   </div>
+  </div>
+   <footer style="bottom: 0; margin-top: 1500px;" >
+    <div class="row">
+      <div class="col">
+        <h4>About Camera Corner</h4>
+        <p>"Camera Corner" Company is the result of a technological revolution and growing e-commerce industry, that encouraged us to 
+          create “A One-Stop Digital Platform”, for all camera lovers. We sell cameras ensuring quality and with the promise of its performance. 
+          But above all, one thing we prioritize in selling is “ The best camera and filming accessories for you”.</p>
+      </div>
+      <div class="col">
+        <h4>More</h4>
+        <ul class="footerlist">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="aboutUsPage.html">About Us</a></li>
+          <li><a href="blogpage.html">Blog Page</a></li>
+          <li><a href="feedbackFormPage.html">Customer Support</a></li>
+          <li><a href="mailto:np01nt4s230025@islingtoncollege.edu.np" target="_blank">Mail Us </a></li>
+        </ul>
+      </div>
+      </div>
+      <p class="footerParagraph"id="date"></p>
+      <p class="footerParagraph""> Copyright &reg; CameraCorner Store</p>
+   </footer>
+   <script>
+    display_date();
+   </script>
+</body>
+</html>
+      

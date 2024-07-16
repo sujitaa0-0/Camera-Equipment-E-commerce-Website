@@ -1,0 +1,76 @@
+.horizontal-slider{
+  display: flex;
+   overflow-x: auto; /*The content overflows in the x axis*/
+  margin: 50px 15%;
+  box-shadow: inset 1px 2px 5px rgba(0,0,0,0.15);
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+} 
+.box{
+  border: #cdcdcd 1px solid;
+  min-width: 250px;
+  margin: 10px 30px;
+}
+.box:hover{
+  box-shadow: inset 1px 2px 5px rgba(0,0,0,0.15);
+  transform: translate(0px, -4px); /*The box div moves 4px to the top */
+  transition: all 0.15s;
+}
+.imgbox{
+  position: relative; /*Allows for the save label to appear on top of the img*/
+}
+
+#feature-label{
+  font-size:50px;
+  margin-top: 0px;
+  border: none;
+  text-align: start;
+}
+.discount{
+  text-decoration: line-through;
+  color: grey;
+  font-size: 14px;
+  font-style: italic;
+}
+
+
+.imgbox > .product-img{
+  width: 80%;
+  margin-top: 0px;
+}
+.product-profile{
+  width: 300px;
+  border: 2px solid #cdcdcd;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+ }
+ .product-profile:hover{
+   box-shadow: inset 1px 2px 5px rgba(0,0,0,0.15);
+   transform: translate(0px, -4px);
+   transition: all 0.15s;
+ }
+ .product-img{
+   width: 80%;
+   margin:8px 30px;
+   vertical-align: center;
+ }
+ 
+ .product-details{
+   text-align: center;
+ }
+ .product-name{
+   font-size: 16px;
+   font-weight: bold;
+   margin: 2px 25px;
+ }
+ .save-label{
+  color: white;
+  background-color: #88bbd6;
+  padding: 4px 8px;
+  left: -2px;
+  top: -1px;
+  position: absolute;
+  box-shadow:  1px 2px 5px rgba(0,0,0,0.15);
+  }

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="CameraCorner, feedback, enquiry, suggestion">
+  <meta name="description" content="Page that hosts a feedback form for the Camera Corner Store">
+  <link rel="stylesheet" href="../css/header.css">
+  <script src="../javascript/date.js"></script>
+  <link rel="stylesheet" href="../css/footer.css">
+  <meta name="author" content="Sujita Pandey">
+  <title>Feedback Form Page</title>
+  <style>
+    .container{
+      background-image: url('../images/wavy.png');  /* adding background image*/
+      background-size: cover;
+      height: 1000px;
+    }
+    
+    
+    .mainBox{
+      margin: 30px 25%;
+      box-shadow: inset 1px 2px 5px rgba(0,0,0,0.15);
+      padding: 10px;
+     
+    }
+
+    .input-box{
+      padding: 2px 4px;
+      border-radius: 6px;
+      border: 2px #cdcdcd solid;
+      margin:auto 10px;
+    }
+    label{
+      font-size: 18px;
+      color: #628598;
+      display: block;
+      margin: 10px 10px;
+      margin-bottom: 5px;
+    }
+    .addToCart{
+    background-color: rgb(227, 76, 39);
+    color: white;
+    border: none;
+    font-size: 15px;
+    border-radius: 12px;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    margin-top: 5px;
+  }
+  .addToCart:hover{
+    opacity: 95%;
+    padding: 6px 16px; /*button increases in size when mouse hover*/
+    margin-bottom:24px ;
+    margin-top: 4px;
+    transition: all 0.1s;
+  }
+  .addToCart:active{
+    opacity: 80%;
+    transition: all 0.15s;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="menu">
+       <nav>
+         <a href="../index.html">
+          <img src="../images/Camera Corner.png" class="logo">
+         </a>
+         <div class="search-container">
+           <form action="/search">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="search"></i></button>
+           </form>
+        </div>
+        <ul>
+           <li><a href="../index.html" >
+             Home</a></li>
+           <li><a href="products.html" >
+             Products
+           </a></li>
+           <li><a href="research.html" >
+             Research
+           </a></li>
+           <li><a href="blogpage.html">
+             Blog
+           </a></li>
+           <li><div class="dropDown">
+             <a href="aboutUsPage.html" class="buttonDrop">
+                About Us 
+             </a>
+             <div class="dropdown-menu">
+               <a href="cvPage1.html">
+                 Sujita
+               </a>
+               <a href="cvPage2.html">
+                 Icchit
+               </a>
+               <a href="cvPage4.html">
+                 Aayush
+               </a>
+               <a href="cvPage3.html" >
+                Ajit
+              </a>
+             </div>
+           </li>
+         </ul>
+         </div>
+       </div>
+   </nav>
+   </header>
+  <div class="container">
+   <div class="mainBox" >
+     <h1 style=" font-size: 30px; font-weight: 500; margin-bottom: 20PX;margin-top: 3px; margin-left: 30%; ">Customer Feedback Form</h1>
+     <form name="feedbackForm" onsubmit="validateForm()" class="forms"> <!--  when the form is submitted validateForm() function is triggered -->
+       <label for="" >Type of Feedback:</label>
+       <select name="" id="feedbackType" class="input-box">
+         <optgroup label="Feedback Type" >
+           <option value="pleaseSelect">Please Select</option>
+           <option value="enquiry">Enquiry</option>
+           <option value="suggestion">Suggestion</option>
+           <option value="complaint">Complaint</option>
+         </optgroup>
+       </select>
+       <label for="">Feedback on:  </label>
+       <select name="" id="feedbackOn" class="input-box">
+         <optgroup label="Feedback On" >
+           <option value="pleaseSelect">Please Select</option>
+           <option value="customerService">Customer Service</option>
+           <option value="product">Product</option>
+           <option value="delivery">Delivery Issue</option>
+           <option value="other">Other</option>
+         </optgroup>
+       </select>
+
+       <label for="">Name: </label>
+       <input type="text " name="name" class="input-box" placeholder="Name" required >
+    
+       <label for="">Gender: <span style="color: grey; font-style: italic; font-size: 10px;">optional</span></label>
+       <input type="radio" name="genderDetails" value="male"  style="margin: auto 2px;">Male
+       <input type="radio" name="genderDetails" value="female" style="margin: auto 2px;">Female
+       <input type="radio" name="genderDetails" value="other" style="margin: auto 2px;">Other
+
+       <label for="email">Email:</label>
+       <input type="email" id="email" class="input-box" name="email" placeholder="name@domain.com" required>
+
+       <label for="">Contact Number:</label>
+       <input type="text" class="input-box" name="cNumber"  required >
+
+       <label for="">Message: </label>
+       <textarea name="messageDetails" class="input-box" cols="50" rows="6" placeholder="write feedback/enquiry/suggestion here" required >
+       </textarea>
+       <input type="submit" value="Submit Button" class="addToCart" style="display: block; margin: 8px 9px;">
+
+      </form>
+    </div>
+  </div>
+</body>
+<footer>
+  <div class="row">
+    <div class="col">
+      <h4>About Camera Corner</h4>
+      <p>"Camera Corner" Company is the result of a technological revolution and growing e-commerce industry, that encouraged us to 
+        create “A One-Stop Digital Platform”, for all camera lovers. We sell cameras ensuring quality and with the promise of its performance. 
+        But above all, one thing we prioritize in selling is “ The best camera and filming accessories for you”.</p>
+    </div>
+    <div class="col">
+      <h4>More</h4>
+      <ul class="footerlist">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="aboutUsPage.html">About Us</a></li>
+        <li><a href="blogpage.html">Blog Page</a></li>
+        <li><a href="feedbackFormPage.html">Customer Support</a></li>
+        <li><a href="mailto:np01nt4s230025@islingtoncollege.edu.np" target="_blank">Mail Us </a></li>
+      </ul>
+    </div>
+    </div>
+    <p class="footerParagraph"id="date"></p>
+    <p class="footerParagraph""> Copyright &reg; CameraCorner Store</p>
+ </footer>
+<script>
+    display_date();
+
+   function validateForm(){
+    var name = document.forms['feedbackForm']['name'].value;
+    var email = document.forms['feedbackForm']['email'].value;
+    var contactNumber = document.forms['feedbackForm']['cNumber'].value;
+    var message = document.forms['feedbackForm']['messageDetails'].value;
+    var feedbackOn = document.forms['feedbackForm']['feedbackOn'].value;
+    var feedbackType = document.forms['feedbackForm']['feedbackType'].value;
+
+    if(feedbackOn == 'pleaseSelect' || feedbackType == 'pleaseSelect'){
+      alert('Valid option has not been selected. Please Try Again.') //when please select has been selected from option group
+    }
+    if(!(contactNumber.length == 10)) {
+      alert('Inappropriate contact number has been wriiten. Please Try Again.') // when contact number is not 10
+    }
+
+    if(name.length <= 2) {
+      alert('Name length should be longer than 2 letters. Please Try Again.') // when the letters of a name are only 2
+    }
+    
+    if(!(feedbackOn == 'pleaseSelect') && !(feedbackType == 'pleaseSelect') && contactNumber.length == 10 && name.length >= 3 ) {
+      alert("Thank You For Your Feedback. We'll be contacting you shortly.")
+    }
+   }
+    
+</script>
+</html>

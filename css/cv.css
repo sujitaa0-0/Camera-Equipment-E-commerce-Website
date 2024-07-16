@@ -1,0 +1,33 @@
+.mainBox{
+  margin: 40px 10%;
+  border:1px grey solid;
+  padding: 20px;
+
+}
+.PicSection {
+  margin: 10px 10%;
+  display: flex;
+  justify-content: center;
+}
+.pic{
+  width: 100%;
+  object-fit: contain;
+}
+.shortDesc{
+  width: 60%;
+  margin-top: 80px;
+  margin-left: 20px;
+}
+p{
+  margin-right:20px;
+  text-align: justify;
+  color: rgb(95, 94, 94);
+}
+.Box{
+  margin-left: 12%;
+}
+.title {
+  margin-left: 10%;
+  font-weight: 600;
+  font: 16px rgba(9, 7, 7, 0.831);
+}
